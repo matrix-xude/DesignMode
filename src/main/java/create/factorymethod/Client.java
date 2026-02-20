@@ -8,8 +8,9 @@ package create.factorymethod;
 public class Client {
 
     public static void main(String[] args) {
-        // 一般工厂为单例，此处省略写法，直接创建
-        Star star = new PlanetFactory().createStar();
+        // 这里必须用GalaxyFactory，才能体现工厂方法的依赖倒置
+        GalaxyFactory factory = new PlanetFactory();
+        Star star = factory.createStar();
         System.out.println(star.speed()+"km/s");
     }
 }

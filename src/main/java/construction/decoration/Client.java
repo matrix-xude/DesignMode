@@ -1,5 +1,7 @@
 package construction.decoration;
 
+import java.util.Comparator;
+
 /**
  * 客户端需要知道具体的攻击方式，和需要装饰的类
  */

@@ -6,6 +6,6 @@ package create.abstractfactory;
 public class AmericanBattleship implements Battleship{
     @Override
     public String name() {
-        return "罗斯福号";
+        return "华盛顿号";
     }
 }

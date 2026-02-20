@@ -6,6 +6,7 @@ package create.builder;
  */
 public abstract class ExplosiveBuilder {
 
+    // 炸药生命周期绑定到建造者，这里是"组合"关系
     protected Explosive explosive;
 
     public ExplosiveBuilder() {

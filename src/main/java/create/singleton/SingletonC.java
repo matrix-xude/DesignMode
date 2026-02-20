@@ -2,7 +2,7 @@ package create.singleton;
 
 /**
  * 利用静态内部类来实现单例
- * 原理：非public的类static的加载时机为第一次使用，保证了节省内存
+ * 原理：static类的加载时机为第一次使用，保证了节省内存
  * 并且只能由系统加载，保证了单一线程
  */
 public class SingletonC {
