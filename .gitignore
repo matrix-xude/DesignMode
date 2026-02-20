@@ -47,3 +47,6 @@ gradle-app.setting
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
+# 手动添加，最好直接忽略整个.idea，防止不同机器java版本差异的提交
+.idea
+
