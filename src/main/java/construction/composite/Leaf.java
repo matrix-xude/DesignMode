@@ -4,17 +4,7 @@ package construction.composite;
  * 叶子构件
  * 内部没有抽象构件集合
  */
-public class Leaf implements Component {
-
-    @Override
-    public void add(Component component) {
-        throw new RuntimeException("叶子构件不能添加");
-    }
-
-    @Override
-    public void remove(Component component) {
-        throw new RuntimeException("叶子构件不能删除");
-    }
+public class Leaf extends Component {
 
     @Override
     public boolean isLeaf() {

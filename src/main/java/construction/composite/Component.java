@@ -3,14 +3,18 @@ package construction.composite;
 /**
  * 抽象构件，对外暴露
  */
-public interface Component {
+public abstract class Component {
 
-    void add(Component component);
+    void add(Component component){
+        throw new RuntimeException("当前构件不能添加");
+    }
 
-    void remove(Component component);
+    void remove(Component component){
+        throw new RuntimeException("当前构件不能删除");
+    }
 
     // 是否为叶子构件
-    boolean isLeaf();
+    abstract boolean isLeaf();
 
-    void show();
+    abstract void show();
 }

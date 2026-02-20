@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 树枝构件，内部包含抽象构件
  */
-public class Composite implements Component {
+public class Composite extends Component {
 
     private List<Component> childList = new ArrayList<>();
 
@@ -27,6 +27,9 @@ public class Composite implements Component {
 
     @Override
     public void show() {
+        // 展示自己
+        System.out.println(this.getClass().getSimpleName());
+        // 展示子构件
         for (Component c : childList) {
             c.show();
         }
