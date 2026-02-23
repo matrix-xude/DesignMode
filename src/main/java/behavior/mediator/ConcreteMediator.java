@@ -13,6 +13,8 @@ public class ConcreteMediator implements Mediator {
     @Override
     public void register(Person person) {
         list.add(person);
+        // 在 register 方法内部自动调用 person.setMediator(this)，以确保双向绑定的原子性，避免客户端漏掉某一步导致空指针异常。
+        person.setMediator(this);
     }
 
     @Override

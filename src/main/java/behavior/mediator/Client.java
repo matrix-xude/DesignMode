@@ -7,8 +7,6 @@ public class Client {
         XiaoMing p1 = new XiaoMing();
         Jack p2 = new Jack();
         // 互相持有引用
-        p1.setMediator(mediator);
-        p2.setMediator(mediator);
         mediator.register(p1);
         mediator.register(p2);
 
